@@ -1,0 +1,525 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Bootstrap demo</title>
+
+
+  <!--Enlace para las clases de CSS de Bootstrap-->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous">
+
+  <!--Enlace de mi hoja de estilos-->
+  <link rel="stylesheet" href="estilos.css">
+
+
+  <!--Enlaces de las fuentes de google-->
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Alegreya&family=Bungee+Shade&display=swap" rel="stylesheet">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Alegreya&family=Bungee+Shade&display=swap" rel="stylesheet">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Alegreya&family=Bungee+Shade&family=Permanent+Marker&display=swap"
+    rel="stylesheet">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Alegreya&family=Bungee+Shade&family=Permanent+Marker&family=Philosopher:ital@1&display=swap"
+    rel="stylesheet">
+
+
+  <!--link de la animacion - animate.style-->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
+
+
+  <!--Enlace al css del reponsive-->
+  <link rel="stylesheet" href="responsive.css">
+
+  <!--CSS del formulario-->
+  <link rel="stylesheet" href="formulario.css">
+
+  <!--CSS del slider-->
+  <link rel="stylesheet" href="slider/slider.css">
+
+  <!--JS de menu-->
+
+  <!--Script del slider-->
+  <script src="slider/slider.js" async></script>
+
+  <!--CSS para el nav-->
+  <link rel="stylesheet" href="navegador.css">
+</head>
+
+<body onload="interval()">
+
+  <header class="container-fluid  colores">
+
+    <h1 class="cabecera animate__animated animate__pulse animate__infinite">
+      JUEGOS <br>
+      OLÍMPICOS <br>
+      DE <br>
+      INVIERNO
+    </h1>
+  </header>
+
+
+  <!--Menu de navegación-->
+
+  <nav class="navbar navbar-expand-lg bg-body-tertiary  position-sticky  fixed-top">
+    <div class="container-fluid">
+
+
+      <a class="navbar-brand" id="colorearF1" href="index.html">Inicio</a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent"
+        aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+          <li class="nav-item">
+            <a class="nav-link active " id="" aria-current="page" href="index.html#separador">Deportes</a>
+          </li>
+
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle enlace" href="#" role="button" data-bs-toggle="dropdown"
+              aria-expanded="false">
+              Destacados
+            </a>
+            <ul class="dropdown-menu">
+              <li><a class="dropdown-item" href="bobsleigh.html">Bobsleigh</a></li>
+              <li>
+                <hr class="dropdown-divider">
+              </li>
+              <li><a class="dropdown-item" href="patinaje.html">Patinaje Artistico</a></li>
+              <li>
+                <hr class="dropdown-divider">
+              </li>
+              <li><a class="dropdown-item" href="curling.html">Curling</a></li>
+            </ul>
+          </li>
+
+          <!--Apartado de redes sociales del menu-->
+
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+              Redes Sociales
+            </a>
+            <ul class="dropdown-menu  redes">
+              <li><a class="dropdown-item" href="https://twitter.com/iocmedia" target="_blank"><img
+                    src="img/redes/gorjeo (1).png" alt=""></a>
+              </li>
+              <li>
+                <hr class="dropdown-divider">
+              </li>
+              <li><a class="dropdown-item" href="https://www.youtube.com/iocmedia" target="_blank"> <img
+                    src="img/redes/youtube.png" alt=""></a>
+              </li>
+
+
+            </ul>
+          </li>
+
+          <li class="nav-item">
+            <a class="nav-link active" aria-current="page" href="aboutus.html">Sobre nosotros</a>
+          </li>
+
+          <li class="nav-item">
+            <a class="nav-link active" aria-current="page" href="#separador2">Coméntanos</a>
+          </li>
+        </ul>
+        <form class="d-flex " role="search">
+          <input class="form-control me-2" type="search" placeholder="Busca aqui..." aria-label="Search">
+          <button class="btn btn-outline-success" type="submit">Filtrar</button>
+        </form>
+      </div>
+    </div>
+  </nav>
+
+
+  <!--Separa el menu de lo que es el contenido de la página-->
+  <!--Para redirigir al apartado de deportes viendose la animación completa-->
+  <div id="separador">
+
+  </div>
+
+
+  <h2 id="sport">DEPORTES DESTACADOS</h2>
+  <div class="posicion row row-cols-12 row-cols-md-3 g-4 animate__animated animate__backInUp ">
+    <div class="card animate__animated animate__backInLeft" style="width: 25rem;">
+      <img src="img/Bobsleigh.jpg" class="card-img-top" alt="...">
+      <div class="card-body">
+        <h5 class="card-title">Bobsleigh</h5>
+        <p class="card-text">Consiste en equipos de dos a cuatro personas montados en un vehículo que se
+          desliza
+          a toda velocidad por un circuito
+          prefijado de más de un kilómetro, normalmente en la nieve. Todo esto mientras
+          tratan de mantener la
+          inercia y una velocidad que llega a alcanzar entre 120 y 145 km/h.</p>
+        <a href="bobsleigh.html" class="btn btn-primary">Ver entrada</a>
+      </div>
+    </div>
+    <div class="card animate__animated animate__backInUp" style="width: 25rem;">
+      <img src="img/patinaje.jpg" class="card-img-top" alt="...">
+      <div class="card-body">
+        <h5 class="card-title">Patinaje Artístico</h5>
+        <p class="card-text">El patinaje artístico, es uno de los deportes más antiguos.
+          Se trata de un deporte de movimiento que combina elementos técnicos con artísticos sobre
+          patines de
+          ejes. Se hace
+          con el acompañamiento musical, el patinador debe tener buen oído para sentir la música y
+          adecuarla a sus
+          movimientos.</p>
+        <a href="patinaje.html" class="btn btn-primary">Ver entrada</a>
+      </div>
+    </div>
+    <div class="card animate__animated animate__backInRight" style="width: 25rem;">
+      <img src="img/curling.jfif" class="card-img-top" alt="...">
+      <div class="card-body">
+        <h5 class="card-title">Curling</h5>
+        <p class="card-text">Es un deporte que se practica sobre una estrecha pista de hielo y adopta
+          los principios básicos de los bolos
+          o del lanzamiento de herraduras. Tradicionalmente se enfrentan dos equipos de 4 jugadores
+          que
+          compiten entre sí en una
+          misma pista, debiendo lanzar 8 piedras de granito por ronda.</p>
+        <a href="curling.html" class="btn btn-primary">Ver entrada</a>
+      </div>
+    </div>
+  </div>
+
+
+
+
+  <h2>Historia</h2>
+
+  <p>
+    <strong>Los Juegos Olímpicos de Invierno</strong> son un evento multideportivo que se celebra cada cuatro años bajo
+    la
+    supervisión y
+    administración del <strong>Comité Olímpico Internacional</strong>. Incluye deportes de invierno tanto de hielo como
+    de
+    nieve.
+
+    El esquí de fondo, el patinaje de velocidad, el patinaje artístico, el hockey sobre hielo, el bobsleigh,
+    la
+    combinada
+    nórdica y los saltos de esquí han formado parte del programa olímpico desde su primera edición. Otros
+    deportes como el
+    luge, el patinaje de velocidad sobre pista corta, el curling o el esquí acrobático se han ido
+    incorporando,
+    mientras que
+    algunos otros como el bandy han sido deportes de exhibición pero nunca han sido incluidos
+    definitivamente en
+    unos
+    Juegos.
+
+    Los I <strong>Juegos Olímpicos de Invierno</strong> se celebraron en la localidad francesa de Chamonix en 1924,
+    aunque
+    con
+    anterioridad
+    el patinaje artístico y el hockey sobre hielo habían formado parte de los juegos de verano. Desde 1924
+    los
+    juegos se
+    celebraron con una periodicidad de cuatro años, a excepción de los años 1940 y 1944 que no pudieron
+    celebrarse a causa
+    de la Segunda Guerra Mundial. Los juegos olímpicos de invierno se restauraron en Sankt Moritz en 1948.
+    Los
+    juegos se
+    continuaron celebrando cada cuatro años y coincidiendo con los juegos de verano hasta la edición de
+    Albertville en 1992
+    cuando el COI decidió que los juegos de verano e invierno se celebrarían en años diferentes. Desde la
+    edición de
+    Lillehammer en 1994 los juegos de verano y de invierno se celebran con dos años de diferencia.
+
+    Desde sus comienzos los Juegos han sufrido importantes cambios. El crecimiento de la televisión como
+    medio
+    de
+    comunicación global ha incrementado la difusión de los mismos y se han incrementado los ingresos por
+    derechos de
+    televisión y publicidad.
+
+    Estados Unidos ha sido el país que en más ocasiones ha organizado los juegos con un total de cuatro,
+    Francia
+    con tres
+    ediciones y Japón, Italia, Suiza, Noruega y Austria con dos se sitúan a continuación. Los Juegos
+    Olímpicos
+    de 2010 se
+    celebraron en Vancouver, con lo que Canadá se unió al grupo de países que han acogido los juegos en dos
+    ocasiones. La
+    edición de 2014 se llevó a cabo en la ciudad de Sochi, es la primera vez que Rusia albergó unos Juegos
+    Olímpicos de
+    invierno.
+
+    Los deportes invernales son populares en regiones del mundo con condiciones climáticas e instalaciones
+    deportivas para
+    la práctica de estos como América del Norte, Europa, Siberia y Asia Oriental, donde los Juegos Olímpicos
+    de
+    Invierno
+    tienen su mayor acogida. Sin embargo, se ha vuelto constante la participación, desde la segunda mitad
+    del
+    siglo xx, en
+    <strong>las olímpiadas invernales</strong> de países con climas templados y desérticos que poseen infraestructura
+    para
+    preparar
+    deportistas como Australia (el más exitoso de los países sin condiciones invernales), Nueva Zelanda,
+    Sudáfrica, India
+    (deportistas de la India del Norte), Irán, Israel, Uzbekistán, Argentina, Chile, México (deportistas del
+    Norte de
+    México) y Brasil (deportistas de las regiones Sudeste y Sur), los cuales tienen instalaciones naturales
+    y
+    artificiales
+    en sus territorios para practicar deportes de invierno. Y desde comienzos del siglo xxi, países ubicados
+    en
+    la zona
+    intertropical han comenzado su participación en las justas de invierno, aunque en estos casos no poseen
+    ni
+    la
+    infraestructura ni el clima apropiado para la práctica de estos deportes, por lo cual la preparación de
+    estos atletas se
+    realiza fuera de sus países; en otros casos, son extranjeros que se nacionalizan y se preparan en sus
+    lugares de origen
+    y/o con vínculos en los países que representan.
+  </p>
+
+
+  <section id="container">
+    <div id="slider">
+      <img class="img-fluid" src="slider/assets/1643924638_497384_1643925029_noticia_normal.jpg"
+        alt="green liquid texture" id="slide">
+    </div>
+  </section>
+
+
+  <p>
+    <strong>El primer evento multideporte específicamente orientado a deportes de invierno fueron los Juegos
+      Nórdicos</strong>,
+    que se
+    celebraron por primera vez en Suecia en 1901. Los Juegos Nórdicos fueron organizados por el general
+    Viktor
+    Gustaf
+    Balck. Su segunda edición se celebró en 1903 y la tercera en 1905, fecha desde la cual se celebraron
+    cada
+    cuatro años
+    hasta 1926.​ Balck fue miembro original del Comité Olímpico Internacional y amigo personal del fundador
+    de
+    los juegos
+    olímpicos, el barón Pierre de Coubertin. Balck intentó incluir deportes de invierno en el programa de
+    los
+    juegos
+    olímpicos en especial el patinaje artístico. Por fin en los Juegos Olímpicos de Londres 1908, se
+    celebraron cuatro
+    pruebas de patinaje. Ulrich Salchow (10 veces campeón del mundo) y Madge Syers ganaron los títulos
+    individuales.
+
+    Tres años después el conde italiano Eugenio Brunetta d'Usseaux propuso al COI la celebración de una
+    semana
+    dedicada a
+    los deportes de invierno como parte del programa olímpico de los Juegos Olímpicos de Estocolmo de 1912,
+    pero
+    los
+    organizadores se opusieron alegando dos motivos: proteger la integridad de los Juegos Nórdicos y la
+    dificultad de
+    acomodar los deportes de invierno en unos juegos de verano. La idea de Eugenio Brunetta volvió a ganar
+    fuerza
+    durante los preparativos de los Juegos Olímpicos de Berlín 1916 e incluso se programó una semana
+    invernal
+    que incluiría
+    pruebas de patinaje de velocidad, patinaje artístico, hockey sobre hielo y esquí nórdico, pero la
+    cancelación de los
+    juegos a causa de la I Guerra Mundial lo impidió.
+
+    En los primeros Juegos tras la guerra, los de Amberes en 1920 el patinaje artístico volvió a incluirse
+    en el
+    programa
+    olímpico, en esta ocasión junto al hockey sobre hielo. En el Congreso del COI de 1921 se decidió que
+    los
+    organizadores
+    de los Juegos Olímpicos de París 1924 acogieran también una "Semana Internacional de Deportes de
+    Invierno"
+    bajo el
+    auspicio del COI. Esta semana, aunque al final fueron 11 días, se celebró en Chamonix y se convirtió en
+    un
+    gran éxito.
+    Más de 200 deportistas de 16 países compitieron en 16 pruebas .Tan solo participaron 15 mujeres, todas
+    ellas en la
+    competición de patinaje artístico. Los representantes de Finlandia y Noruega dominaron las pruebas. En
+    1925 el COI
+    decidió crear unos Juegos Olímpicos de Invierno, siendo designados los celebrados en Chamonix como la
+    primera edición.
+
+
+    <strong> Sonja Henie, se convirtió en la campeona olímpica más joven de la historia hasta ese momento al ganar el
+      oro
+      en patinaje
+      artístico en 1928.</strong>
+    St. Moritz fue seleccionada por el COI para albergar los Juegos Olímpicos de Invierno de 1928. Las
+    variables
+    condiciones meteorológicas condicionaron el desarrollo de los juegos. La ceremonia inaugural se celebró
+    bajo
+    una fuerte
+    ventisca, mientras que la prueba de 10 000 m de patinaje de velocidad tuvo que ser suspendida y
+    oficialmente
+    cancelada sin ganador. De la misma forma la prueba de 50 km de esquí de fondo se disputó bajo una
+    temperatura de 25
+    °C. La meteorología no fue lo único a destacar de los juegos; la patinadora noruega Sonja Henie se
+    convirtió en la
+    campeona olímpica más joven de la historia al lograr el oro en patinaje artístico a la edad de 15 años.
+    Este
+    récord de
+    precocidad no sería superado hasta 74 años después.
+
+    <strong> Juegos de 1932 se celebraron por primera vez fuera de Europa</strong>, en concreto en Lake Placid.
+    Participaron
+    menos atletas
+    que en la edición anterior debido a lo largo y costoso del viaje y a la crisis económica del momento.
+    Los
+    Juegos
+    volvieron a verse afectados por las condiciones climáticas dado que hasta mediados de enero no nevó lo
+    suficiente como
+    para asegurar la celebración de las distintas pruebas. Sonja Henie defendió su título olímpico. Eddie
+    Eagan, que
+    había logrado el oro en boxeo en los Juegos de 1920 logró el oro en la prueba de bobsleigh
+    convirtiéndose en
+    el primer y
+    hasta el momento único deportista en lograr la medalla de oro tanto en unos juegos de verano como de
+    invierno.
+
+    La ciudad bávara de Garmisch-Partenkirchen fue la organizadora de los Juegos de 1936 entre los días 6 y
+    16
+    de
+    febrero. 1936 fue el último año en que los juegos de verano e invierno se celebraron en el mismo país.
+    El
+    esquí
+    alpino debutó en unos Juegos. Los esquiadores de Suiza y Austria se negaron a participar en protesta por
+    la
+    prohibición del COI de que participaran profesores de esquí, puesto que se les consideraba
+    profesionales.
+  </p>
+  </div>
+  <div><br><br></div>
+
+  <div id="separador2">
+
+  </div>
+
+  <form class="formulario" id="formu">
+    <h2>Dejanos aqui tu comentario o sugerencia</h2>
+    <!-- 2 column grid layout with text inputs for the first and last names -->
+    <div class="row mb-4">
+      <div class="col">
+        <div class="form-outline">
+          <input type="text" id="form6Example1" class="form-control" />
+          <label class="form-label" for="form6Example1">Nombre</label>
+        </div>
+      </div>
+      <div class="col">
+        <div class="form-outline">
+          <input type="text" id="form6Example2" class="form-control" />
+          <label class="form-label" for="form6Example2">Apellidos</label>
+        </div>
+      </div>
+    </div>
+
+    <!-- Text input -->
+    <div class="form-outline mb-4">
+      <input type="text" id="form6Example3" class="form-control" />
+      <label class="form-label" for="form6Example3">Nombre de empresa</label>
+    </div>
+
+    <!-- Text input -->
+    <div class="form-outline mb-4">
+      <input type="text" id="form6Example4" class="form-control" />
+      <label class="form-label" for="form6Example4">Dirección</label>
+    </div>
+
+    <!-- Email input -->
+    <div class="form-outline mb-4">
+      <input type="email" id="form6Example5" class="form-control" />
+      <label class="form-label" for="form6Example5">Email</label>
+    </div>
+
+    <!-- Number input -->
+    <div class="form-outline mb-4">
+      <input type="number" id="form6Example6" class="form-control" />
+      <label class="form-label" for="form6Example6">Telefóno</label>
+    </div>
+
+    <!-- Message input -->
+    <div class="form-outline mb-4">
+      <textarea class="form-control" id="form6Example7" rows="4"></textarea>
+      <label class="form-label" for="form6Example7">Comentario</label>
+    </div>
+
+    <!-- Checkbox -->
+    <div class="form-check d-flex justify-content-center mb-4">
+      <input class="form-check-input me-2" type="checkbox" value="" id="form6Example8" checked />
+      <label class="form-check-label" for="form6Example8"> Create an account? </label>
+    </div>
+
+    <!-- Submit button -->
+    <button type="submit" class="btn btn-primary btn-block mb-4">Enviar</button>
+  </form>
+
+
+
+
+
+
+  <!-- Footer -->
+  <footer class=" text-center text-white" style="background-color:#1c1c1c;">
+    <!-- Grid container -->
+    <div class="container p-4">
+
+      <!-- Section: Social media -->
+      <section class="mb-4">
+
+        <!-- Twitter -->
+        <a class="btn btn-primary btn-floating m-1 redes" style="background-color: #55acee" target="_blank"
+          href="https://twitter.com/iocmedia" role="button"><i class="fab fa-twitter"><img
+              src="img/redes/gorjeo (1).png" alt=""></i></a>
+
+        <!-- Youtube -->
+        <a class="btn btn-primary btn-floating m-1 redes" style="background-color: #dd4b39" target="_blank"
+          href="https://www.youtube.com/iocmedia" role="button"><img src="img/redes/youtube.png" alt=""><i
+            class="fab fa-google"></i></a>
+
+
+      </section>
+      <!-- Section: Social media -->
+
+
+
+
+    </div>
+    <!-- Grid container -->
+
+    <!-- Copyright -->
+    <div class="text-center p-3" style="background-color: rgba(0, 0, 0, 0.2)">
+      © 2020 Copyright:
+      <a class="text-white" href="https://mdbootstrap.com/">MDBootstrap.com</a> «©» Trabajo hecho por
+      Pedro J
+      Romero
+      de la clase de desarrollo de aplicaciones de Cal Molins.
+
+    </div>
+    <!-- Copyright -->
+
+  </footer>
+
+
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN"
+    crossorigin="anonymous"></script>
+</body>
+
+
+
+</html>

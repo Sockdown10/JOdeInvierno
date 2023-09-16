@@ -1,0 +1,16 @@
+    #colorearF1 {
+        width: 5%;
+        background-color: palegreen !important;
+        border-radius: 15px;
+    }
+
+    #colorearF {
+        background-color: palegreen !important;
+        border-radius: 15px;
+    }
+
+    @media screen and (max-width:1000px) {
+        #colorearF1 {
+            background: none !important;
+        }
+    }

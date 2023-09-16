@@ -1,0 +1,315 @@
+body {
+    background-color: ghostwhite;
+    color: black;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: justify;
+    overflow-x: clip;
+}
+
+header {
+    width: 100%;
+    height: 840px;
+    background-image: url("img/Aros-Olimpicos-de-Invierno.jpg");
+
+    background-size: cover;
+
+}
+
+
+
+.cabecera {
+    font-size: 5em;
+    transition: 1s;
+    padding-top: 100px;
+    font-family: 'Alegreya', serif;
+    font-family: 'Bungee Shade', cursive;
+    text-shadow: 0px 0px 25px white;
+
+    text-shadow: 0px 0px 20px white;
+    padding-left: 100px;
+    padding-top: 200px;
+}
+
+.colores {
+    animation: colores 6s infinite;
+    transition: 0.5s;
+}
+
+@keyframes colores {
+    0% {
+        color: red;
+    }
+
+    25% {
+        color: black;
+    }
+
+    50% {
+        color: rgb(0, 17, 255);
+    }
+
+    75% {
+        color: greenyellow;
+    }
+
+    100% {
+        color: yellow;
+    }
+
+}
+
+
+
+#historia {
+    margin-top: 150px;
+
+}
+
+h2 {
+    font-family: 'Alegreya', serif;
+    font-family: 'Bungee Shade', cursive;
+    font-family: 'Permanent Marker', cursive;
+    font-size: 3em;
+    text-align: center;
+    margin-bottom: 25px;
+    text-decoration: underline;
+}
+
+
+
+
+p {
+    font-family: 'Alegreya', serif;
+    font-family: 'Bungee Shade', cursive;
+    font-family: 'Permanent Marker', cursive;
+    font-family: 'Philosopher', sans-serif;
+    font-size: 1.2em;
+    margin-left: 5%;
+    margin-right: 5%;
+    text-align: justify;
+    margin-top: 2%;
+    margin-bottom: 2%;
+}
+
+.valores {
+    font-family: 'Alegreya', serif;
+    font-family: 'Bungee Shade', cursive;
+    font-family: 'Permanent Marker', cursive;
+    font-family: 'Philosopher', sans-serif;
+    font-size: 1.2em;
+    margin-left: 5%;
+    margin-right: 5%;
+    text-align: justify;
+    margin-top: 2%;
+    margin-bottom: 2%;
+}
+
+.valores li {
+    margin-bottom: 1%;
+}
+
+footer {
+    width: 100%;
+    background-color: black;
+    color: white;
+    text-align: center;
+    padding: 2px;
+    border-radius: 5px;
+
+}
+
+.final {
+    text-align: center;
+}
+
+.posicion {
+    width: 98%;
+    padding: 10px;
+    padding-bottom: 25px;
+    display: flex;
+    flex-direction: row;
+    margin: auto;
+    justify-content: space-around;
+    margin-top: 20px;
+    margin-bottom: 200px;
+    background-color: rgb(177, 176, 176);
+    border: 5px solid black;
+    box-shadow: 0px 0px 10px black;
+    border-radius: 10px;
+}
+
+
+
+h5 {
+    text-align: center;
+    font-family: 'Alegreya', serif;
+    font-family: 'Bungee Shade', cursive;
+    font-family: 'Permanent Marker', cursive;
+}
+
+.card {
+
+    padding: 2px;
+    border: 1px outset;
+    box-shadow: 0px 0px 13px inset black;
+    margin-left: 15px;
+    margin-right: 15px;
+}
+
+.card:hover {
+    border: 3px solid palegreen
+}
+
+
+.card-text {
+    text-align: center;
+}
+
+.card a {
+    background-color: #0080C7;
+    color: white;
+    margin-left: 30%;
+    border: 2px outset black;
+}
+
+.animate__animated.animate__pulse {
+    --animate-duration: 2s;
+}
+
+nav {
+    width: 100%;
+    background-color: black !important;
+    color: white !important;
+    border: 2px solid black;
+    box-shadow: 0px 0px 10px black;
+    border-radius: 5px;
+    margin-top: 0.3%;
+    text-align: center;
+}
+
+nav a:focus {
+    background-color: palegreen;
+}
+
+nav a:current {
+    background-color: black;
+}
+
+
+
+
+#separador {
+    height: 60px;
+}
+
+#separador2 {
+    height: 60px;
+}
+
+
+
+.video {
+
+    margin-left: 15%;
+}
+
+.bobsleigh {
+    width: 98%;
+    height: 700px;
+    background-size: contain;
+}
+
+.imagen {
+    display: flex;
+    justify-content: center;
+}
+
+iframe {
+    display: flex;
+    box-shadow: 0px 10px 10px black;
+    border-radius: 5px;
+
+}
+
+.explicacion {
+    font-family: 'Alegreya', serif;
+    font-family: 'Bungee Shade', cursive;
+    font-family: 'Permanent Marker', cursive;
+    font-family: 'Philosopher', sans-serif;
+    font-size: 1.2em;
+    margin-left: 5%;
+    margin-right: 5%;
+    text-align: justify;
+}
+
+
+.colo-slider {
+    display: flex;
+    justify-content: center;
+}
+
+.redes {
+    border-radius: 15px;
+}
+
+.redes li a {
+    width: auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.redes img {
+    width: 40px;
+    height: 40px;
+}
+
+.mb-4 a {
+    border: none;
+    height: auto;
+    border-radius: 105px;
+}
+
+mb-4 a img {
+    display: flex;
+    justify-content: center;
+
+}
+
+.sobre-nosotros {
+    box-shadow: 0px 10px 10px black;
+}
+
+.olimpico {
+    display: flex;
+    justify-content: center;
+}
+
+a:hover {
+    background-color: palegreen !important;
+    border-radius: 15px;
+}
+
+button:hover {
+    background-color: palegreen !important;
+    border-radius: 15px;
+}
+
+footer {
+    margin-top: 20px;
+}
+
+.container {
+    height: 65px;
+}
+
+.primeraP {
+    display: flex;
+}
+
+.separador2 {
+    height: 30px;
+}

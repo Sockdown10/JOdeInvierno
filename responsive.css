@@ -1,0 +1,77 @@
+@media screen and (max-width: 1200px) {
+    #slide {
+        height: auto !important;
+    }
+}
+
+@media screen and (max-width:1000px) {
+    * p {
+        font-size: 1.7em;
+    }
+
+    .explicacion {
+        font-size: 1.7em;
+    }
+
+
+}
+
+@media screen and (max-width:750px) {
+    .cabecera {
+        font-size: 3.5em;
+        transition: 1s;
+    }
+
+    header {
+        height: 500px;
+        transition: 1s;
+    }
+
+    .cabecera {
+        font-size: 2.5em;
+        margin-left: -85px;
+        margin-top: -45px;
+        transition: 1s;
+
+    }
+}
+
+@media screen and (max-width: 500px) {
+    .cabecera {
+        font-size: 2.5em;
+        transition: 1s;
+        margin-left: -10px;
+    }
+
+    .mobile {
+        display: none;
+        transition: 1s;
+    }
+
+    .margen {
+        margin-top: 10px;
+    }
+
+    #slide {
+        height: 250px !important;
+    }
+
+}
+
+@media screen and (max-width:350px) {
+
+
+    .cabecera {
+        font-size: 2.5em;
+        margin-left: -85px;
+        margin-top: -45px;
+        transition: 1s;
+
+    }
+
+    h2 {
+        font-size: 1.5em;
+        transition: 1s;
+    }
+
+}
